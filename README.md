@@ -26,6 +26,10 @@ MIT
 
 Copyright © 2015 - 2024 [Tyler Liu](https://github.com/tylerlong/)
 
+## Notes
+
+- No [abbreviation](https://michelf.ca/projects/php-markdown/extra/#abbr) support, because prettier will replace "\*" with "\_" which will break abbreviation.
+
 ---
 
 ## Todo
@@ -53,13 +57,6 @@ Copyright © 2015 - 2024 [Tyler Liu](https://github.com/tylerlong/)
 - Close most GitHub issues
 - preview dark mode
 - Just copy its example: https://docs.github.com/en/get-started/writing-on-github
-- codemirror 6 issues:
-  - themes
-    - 2 themes are enough: light and dark
-  - key bindings
-    - vim/emacs/sublime
-  - scroll sync
-  - editor.setOption('extraKeys', extraKeys);
-  - auto focus after editor.replaceSelection
-  - Make preferences work
 - Evaluate latest version of mermaid
+- Every useEffect should have a dispose method
+- Preview dark theme and light theme

@@ -1,0 +1,60 @@
+.gutter {
+  background-color: #dddddd;
+}
+.gutter:hover {
+  background-color: #c4e1a4;
+}
+
+#toolbar {
+  overflow: hidden;
+  padding-left: 3px;
+}
+#toolbar .fa {
+  padding: 2px 5px;
+  border: 1px solid transparent;
+}
+#toolbar .fa:hover,
+#about-icon:hover {
+  background-color: #999;
+  border-color: #ccc;
+  cursor: pointer;
+}
+
+#about-icon {
+  height: 20px;
+  vertical-align: top;
+}
+
+.heading-icon {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+.dividor {
+  font-style: normal;
+  color: #ddd;
+  margin: 0 6px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  scroll-margin-top: 1px;
+}
+
+pre code.hljs {
+  padding: 0;
+}

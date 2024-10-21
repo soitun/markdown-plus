@@ -532,6 +532,11 @@
   dependencies:
     levn "^0.4.1"
 
+"@fortawesome/fontawesome-free@^6.6.0":
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-6.6.0.tgz#0e984f0f2344ee513c185d87d77defac4c0c8224"
+  integrity sha512-60G28ke/sXdtS9KZCpZSHHkCbdsOGEhIUGlwq6yhY74UpTiToIh8np7A8yphhM4BWsvNFtIvLpi4co+h9Mr9Ow==
+
 "@humanfs/core@^0.19.0":
   version "0.19.0"
   resolved "https://registry.npmjs.org/@humanfs/core/-/core-0.19.0.tgz#08db7a8c73bb07673d9ebd925f2dad746411fcec"
@@ -2102,6 +2107,11 @@ commander@^7.0.0, commander@^7.2.0:
   resolved "https://registry.npmjs.org/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
   integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
 
+commander@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-8.3.0.tgz#4837ea1b2da67b9c616a67afbb0fafee567bca66"
+  integrity sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==
+
 compute-scroll-into-view@^3.0.2:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/compute-scroll-into-view/-/compute-scroll-into-view-3.1.0.tgz#753f11d972596558d8fe7c6bcbc8497690ab4c87"
@@ -2939,6 +2949,11 @@ hasown@^2.0.0, hasown@^2.0.1, hasown@^2.0.2:
   dependencies:
     function-bind "^1.1.2"
 
+highlight.js@^11.10.0:
+  version "11.10.0"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.10.0.tgz#6e3600dc4b33d6dc23d5bd94fbf72405f5892b92"
+  integrity sha512-SYVnVFswQER+zu1laSya563s+F8VDGt7o35d4utbamowvUNLLMovFqwCLSocpZTz3MgaSRA1IbqRWZv97dtErQ==
+
 htmlnano@^2.0.0:
   version "2.1.1"
   resolved "https://registry.npmjs.org/htmlnano/-/htmlnano-2.1.1.tgz#9ba84e145cd8b7cd4c783d9ab8ff46a80e79b59b"
@@ -3249,6 +3264,13 @@ json5@^2.2.0, json5@^2.2.1, json5@^2.2.3:
     object.assign "^4.1.4"
     object.values "^1.1.6"
 
+katex@^0.16.11:
+  version "0.16.11"
+  resolved "https://registry.yarnpkg.com/katex/-/katex-0.16.11.tgz#4bc84d5584f996abece5f01c6ad11304276a33f5"
+  integrity sha512-RQrI8rlHY92OLf3rho/Ts8i/XvjgguEjOkO1BEXcU3N8BqPpSzBNwV/G0Ukr+P/l3ivvJUE/Fa/CwbS6HesGNQ==
+  dependencies:
+    commander "^8.3.0"
+
 keyv@^4.5.4:
   version "4.5.4"
   resolved "https://registry.npmjs.org/keyv/-/keyv-4.5.4.tgz#a879a99e29452f942439f2a405e3af8b31d4de93"
@@ -3407,12 +3429,14 @@ manate@^0.9.8:
   resolved "https://registry.yarnpkg.com/manate/-/manate-0.9.8.tgz#5a2b97f832a36389d7903cadef161692a67ff1b6"
   integrity sha512-kFQ1APK53tG4o07+8SUuJYOzBzYMIwa7FnIN3Z8Czlo9C+g5OJ0RBy9wlV7q8Sw2uUojTfH72y8oSz8G2jFhSA==
 
-markdown-extensible@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/markdown-extensible/-/markdown-extensible-0.1.6.tgz#4426c1461b0eda3428127f29f0b01aa67bcd2a21"
-  integrity sha512-XCKsNEIsp2YzrnWc7EQEZW12RU2CbH30Xcl5Of2PV7OZk++L7HZNqy/mIbQo7k9KMXPMpM5ZuTLlOT04FwEuMg==
+markdown-extensible@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/markdown-extensible/-/markdown-extensible-0.2.1.tgz#0166ff05cb96dbd3f69af48ed062225c0cfc14da"
+  integrity sha512-bNPJ3vEKJyhewTm9Ha4w2t2izwRhdvCbfcvhfbbA9KeKiJX93DVxsqhkMx//00d/BFVk3V8FqQgATnuJqW8cIg==
   dependencies:
     "@sindresorhus/slugify" "^2.2.1"
+    highlight.js "^11.10.0"
+    katex "^0.16.11"
     markdown-it "^14.1.0"
     markdown-it-anchor "^9.2.0"
     markdown-it-cjk-breaks "^2.0.0"
@@ -3422,6 +3446,7 @@ markdown-extensible@^0.1.6:
     markdown-it-footnote "^4.0.0"
     markdown-it-ins "^4.0.0"
     markdown-it-mark "^4.0.0"
+    markdown-it-regex "^0.2.0"
     markdown-it-sub "^2.0.0"
     markdown-it-sup "^2.0.0"
 
@@ -3466,6 +3491,11 @@ markdown-it-mark@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/markdown-it-mark/-/markdown-it-mark-4.0.0.tgz#c19cbc87d9cb9fd1a495e8fe31b740b6d9ebf8c8"
   integrity sha512-YLhzaOsU9THO/cal0lUjfMjrqSMPjjyjChYM7oyj4DnyaXEzA8gnW6cVJeyCrCVeyesrY2PlEdUYJSPFYL4Nkg==
+
+markdown-it-regex@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-regex/-/markdown-it-regex-0.2.0.tgz#e09ad2d75209720d591d3949e1142c75c0fbecf6"
+  integrity sha512-111UnMGJSt37gy+DlgcpQNwEfS2jvscOFSztzGhuXUHk7K1J5eAEj6C3jifmKb0cWtTuxdpHgIt4PyGQ+DtDjw==
 
 markdown-it-sub@^2.0.0:
   version "2.0.0"

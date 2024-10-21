@@ -57,24 +57,20 @@ export class Store {
       ),
     });
 
-    // preview theme
-    if (darkTheme) {
-      document.getElementById('dark-theme').removeAttribute('disabled');
-      document.getElementById('light-theme').setAttribute('disabled', 'true');
-    } else {
-      document.getElementById('light-theme').removeAttribute('disabled');
-      document.getElementById('dark-theme').setAttribute('disabled', 'true');
-    }
-
-    // editor font size
-    this.editor.dispatch({
-      effects: this.editorFontSize.reconfigure(
-        EditorView.theme({
-          '&': {
-            fontSize: this.preferences.editorFontSize + 'px',
-          },
-        }),
-      ),
+    // preview and toolbar theme
+    document.querySelectorAll('[data-theme="light"]').forEach((el) => {
+      if (darkTheme) {
+        el.setAttribute('disabled', '');
+      } else {
+        el.removeAttribute('disabled');
+      }
+    });
+    document.querySelectorAll('[data-theme="dark"]').forEach((el) => {
+      if (darkTheme) {
+        el.removeAttribute('disabled');
+      } else {
+        el.setAttribute('disabled', '');
+      }
     });
   }
 }

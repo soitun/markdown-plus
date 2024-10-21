@@ -4,7 +4,7 @@ Markdown Plus ("M+" or "mdp" for short) is a markdown editor with extra features
 
 <img src="https://chuntaoliu.com/markdown-plus/icon.svg" alt="icon" width="256" height="256"/>
 
-# Table of Contents
+## Table of Contents
 
 [toc]
 
@@ -22,7 +22,7 @@ Markdown allows you to write using an easy-to-read, easy-to-write plain text for
 
 ## Underline
 
-++insert++
+++underline++
 
 ## Mark
 
@@ -30,13 +30,13 @@ Markdown allows you to write using an easy-to-read, easy-to-write plain text for
 
 ## Subscript
 
-H~2~O
+H~2~O or H<sub>2</sub>O
 
 You can also use inline math: `$H_2O$`
 
 ## Superscript
 
-29^th^
+29^th^ or 29<sup>th</sup>
 
 You can also use inline math: `$29^{th}$`
 
@@ -51,6 +51,10 @@ You can also use inline math: `$29^{th}$`
 :fa-cab: :fa-flag: :fa-bicycle: :fa-leaf: :fa-heart:
 
 [All the Font Awesome icons](https://github.com/gluons/Font-Awesome-Icon-Chars/blob/master/character-list/character-list.yaml)
+
+You may specify the font icon style like this :fa-regular fa-smile:.
+
+Please note that, this demo only includes free icons and styles.
 
 ## Code snippets
 
@@ -116,11 +120,11 @@ note.]
 
 ## Mathematical formula
 
-Inline math: `$\dfrac{ \tfrac{1}{2}[1-(\tfrac{1}{2})^n] }{ 1-\tfrac{1}{2} } = s_n$`.
+Inline math: `$\dfrac{ \tfrac{1}{2}[1-(\tfrac{1}{2})^n] }{ 1-\tfrac{1}{2} } = s_n$`
 
 Math block:
 
-```katex
+```math
 \oint_C x^3\, dx + 4y^2\, dy
 
 2 = \left(
@@ -138,27 +142,6 @@ Math block:
 ```
 
 [Mathematical Formula Syntax](https://www.mediawiki.org/wiki/Extension:Math/Syntax)
-
-## AsciiMath
-
-Inline AsciiMath: `@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@`
-
-```AsciiMath
-oint_Cx^3 dx+4y^2 dy
-
-2=(((3-x)xx2)/(3-x))
-
-sum_(m=1)^oosum_(n=1)^oo(m^2 n)/(3^m(m3^n+n3^m)
-```
-
-```ASCIIMath
-phi_n(kappa) = 1/(4pi^2 kappa^2)
- int_0^oo (sin(kappa R))/(kappa R)
- del/(del R)
-[R^2 (del D_n (R))/(del R)] del R
-```
-
-[AsciiMath Documentation](https://asciimath.org/)
 
 ## Mermaid charts
 
